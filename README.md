@@ -76,9 +76,9 @@ GitHub.
 ### Живая страница
 
 Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному в отредактированном свойстве `homepage`. Например, вот
-ссылка на живую версию для этого репозитория
-[https://goitacademy.github.io/vanilla-app-template](https://goitacademy.github.io/vanilla-app-template).
+по адресу указанному на вкладке `Settings` > `Pages` в настройках репозитория.
+Например, вот ссылка на живую версию для этого репозитория
+[https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
 
 Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
 связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
