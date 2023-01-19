@@ -12,5 +12,8 @@
     "vite": "^4.0.0"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vite-plugin-html-inject": "^1.0.1"
+  }
 }

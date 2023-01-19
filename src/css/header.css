@@ -1,0 +1,12 @@
+/* header styles */
+header {
+  padding: 20px;
+
+  font-size: 1.2em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+
+  background: lightblue;
+}
