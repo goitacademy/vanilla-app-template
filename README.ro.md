@@ -1,7 +1,7 @@
 # Vanilla App Template
 
 Acest proiect a fost creat cu ajutorul Vite. Pentru o mai bună cunoaștere 
-și configurare a funcțiilor suplimentare [consultați documentația](https://vitejs.dev/).
+și configurare a funcțiilor suplimentare [consultă documentația](https://vitejs.dev/).
 
 ## Crearea unui repozitoriu pe baza unui șablon
 
