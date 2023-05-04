@@ -1,113 +1,103 @@
 # Vanilla App Template
 
-Этот проект был создан при помощи Vite. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://vitejs.dev/).
+Acest proiect a fost creat cu ajutorul Vite. Pentru o mai bună cunoaștere 
+și configurare a funcțiilor suplimentare [consultați documentația](https://vitejs.dev/).
 
-## Создание репозитория по шаблону
+## Crearea unui repozitoriu pe baza unui șablon
 
-Используй этот репозиторий организации GoIT как шаблон для создания репозитория
-своего проекта. Для этого нажми на кнопку `«Use this template»` и выбери опцию
-`«Create a new repository»`, как показано на изображении.
+Utilizează acest repozitoriu al organizației GoIT ca model pentru crearea unui 
+repozitoriu pentru proiectul personal. Pentru a face acest lucru, dă click pe 
+`"Use this template"` și selectează opțiunea `"Create a new repository"`, conform 
+imaginii.
 
 ![Creating repo from a template step 1](./assets/template-step-1.png)
 
-На следующем шаге откроется страница создания нового репозитория. Заполни поле
-его имени, убедись, что репозиторий публичный, после чего нажми кнопку
-`«Create repository from template»`.
+Următorul pas te va duce la pagina de creare a unui nou repozitoriu. Completează 
+câmpul cu numele acestuia, asigură-te că repozitoriul este public, apoi dă click pe 
+butonul `"Create repository from template"`.
 
 ![Creating repo from a template step 2](./assets/template-step-2.png)
 
-После того как репозиторий будет создан, необходимо перейти в настройки
-созданного репозитория на вкладку `Settings` > `Actions` > `General` как
-показано на изображении.
+Odată ce repozitoriul a fost creat, trebuie să accesezi setările repozitoriului 
+creat în fila `Settings` > `Actions` > `General`, conform imaginii.
 
 ![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
 
-Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
-опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
-необходимо для автоматизации процесса деплоя проекта.
+După ce ai derulat până la sfârșitul paginii, în secțiunea `"Workflow 
+permissions"`, selectează `"Read and write permissions"` și bifează caseta. Acest 
+lucru este necesară pentru a automatiza procesul de deployment al proiectului.
 
 ![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
 
-Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
-репозитория-шаблона. Далее работай с ним, как с любым другим личным
-репозиторием, клонируй его себе на компьютер, пиши код, делай коммиты и
-отправляй их на GitHub.
+Acum dispui de un depozit personal de proiecte, cu o structură de fișiere și foldere 
+de tip repozitoriu-șablon. În continuare, poți lucra cu acesta așa cum ai face-o cu 
+orice alt repozitoriu privat - clonează-l pe calculatorul tău, scrie cod, 
+fă commit-uri și încarcă-le pe GitHub.
 
-## Подготовка к работе
+## Pregătirea pentru muncă
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Установи базовые зависимости проекта в терминале командой `npm install`.
-3. Запусти режим разработки, выполнив в терминале команду `npm run dev`.
-4. Перейди в браузере по адресу [http://localhost:5173](http://localhost:5173).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+1. Asigură-te că ai instalat pe calculator versiunea LTS a Node.js.
+   [Descarc-o și instaleaz-o](https://nodejs.org/en/) dacă este necesar.
+2. Instalează dependențele de bază ale proiectului în terminal folosind comanda `npm install`.
+3. Lansează modul de dezvoltare prin executarea în terminal a comenzii `npm run dev`.
+4. Accesează în browser [http://localhost:5173](http://localhost:5173).
+Această pagină se va reîncărca automat după salvarea modificărilor în fișierele proiectului.
 
-## Файлы и папки
+## Fișiere și foldere
 
-- Файлы разметки компонентов страницы должни находиться в папке `src/partials` и
-  импортироваться в файл `index.html`. Например, файл с разметкой хедера
-  `header.html` создаем в папке `partials` и импортируем в `index.html`.
-- Файлы стилей должны лежать в папке `src/css` и импортироваться в HTML-файлы
-  страниц. Например, для `index.html` файл стилей называется `index.css`.
-- Изображения добавляй в папку `src/img`. Сборщик оптимизирует их, но только при
-  деплое продакшн версии проекта. Все это происходит в облаке, чтобы не
-  нагружать твой компьютер, так как на слабых машинах это может занять много
-  времени.
+- Fișierele cu marcaje pentru componentele paginii trebuie să se afle în folderul `src/partials` și să fie importate în fișierul `index.html`. De exemplu, fișierul cu marcajul antetului header.html", trebuie creat în folderul `partials` și importat în `index.html`.
+- Fișierele cu stiluri trebuie să fie în folderul `rc/css` și importate în fișierele HTML ale paginilor. De exemplu, pentru `index.html`, fișierul cu stiluri se numește `index.css`.
+- Imaginile trebuie adăugate în folderul `src/img`. Builderul le va optimiza, dar numai atunci când este încărcată versiunea de producție a proiectului. Toate acestea se fac în cloud, pentru a nu încărca calculatorul, deoarece pe calculatoarele slabe ar putea să dureze mult timp.
 
-## Деплой
+## Deployment
 
-Продакшн версия проекта будет автоматически собираться и деплоиться на GitHub
-Pages, в ветку `gh-pages`, каждый раз когда обновляется ветка `main`. Например,
-после прямого пуша или принятого пул-реквеста. Для этого необходимо в файле
-`package.json` изменить значение флага `--base=/<REPO>/`, для команды `build`,
-заменив `<REPO>` на название своего репозитория, и отправить изменения на
+Versiunea de producție a proiectului va fi construită și distribuită automat pe 
+GitHub Pages, în ramura `gh-pages`, de fiecare dată când ramura `main` este 
+actualizată. De exemplu, după un push direct sau o cerere de pool-request acceptată. 
+Pentru a face acest lucru, modifică valoarea flag-ului `--base=/<REPO>/` din 
+fișierul `package.json`, pentru comanda `build`, înlocuind `<REPO>` cu numele 
+repozitoriului tău și trimițând modificările pe
 GitHub.
 
 ```json
 "build": "vite build --base=/<REPO>/",
 ```
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+Apoi, accesează setările repozitoriului GitHub (`Settings` > `Pages`) și selectează 
+să fie distribuită versiunea de producție a fișierelor din folderul `/root` al 
+ramurii `gh-pages`, dacă acest lucru nu a fost făcut automat.
 
 ![GitHub Pages settings](./assets/repo-settings.png)
 
-### Статус деплоя
+### Statutul de deployment
 
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
+Starea ultimei confirmări este indicată de o iconiță situată lângă identificator.
 
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
+- **Galben** - Proiectul este în curs de construcție și deployment.
+- **Verde** - Deployment-ul a fost finalizat cu succes.
+- **Roșu** - A apărut o eroare în timpul la linting, asamblare sau deployment.
 
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
+Informații mai detaliate privind statutul pot fi vizualizate făcând click pe 
+iconiță, iar în fereastra derulantă accesează linkul `Details`.
 
 ![Deployment status](./assets/deploy-status.png)
 
-### Живая страница
+### Pagina live
 
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному на вкладке `Settings` > `Pages` в настройках репозитория.
-Например, вот ссылка на живую версию для этого репозитория
+După o perioadă de timp, de obicei câteva minute, pagina live poate fi vizualizată 
+la adresa specificată în secțiunea `Settings` > `Pages` din setările repozitoriului. 
+De exemplu, iată linkul către versiunea live pentru acest repozitoriu
 [https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
 
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение флага `--base` для команды `build` в файле
-`package.json`.
+Dacă se deschide o pagină goală, verifică dacă nu există erori în fila `Console`. 
+legate de căi de acces incorecte către fișierele CSS și JS ale proiectului 
+(**404**). Cel mai probabil, ai o valoare greșită a flag-ului `--base` pentru 
+comanda `build` din fișierul `package.json`.
 
-## Как это работает
+## Cum funcționează
 
 ![How it works](./assets/how-it-works.png)
 
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит линтинг и сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+1. După fiecare push către ramura `main` a repozitoriului GitHub, se execută un script special (GitHub Action) din fișierul `.github/workflows/deploy.yml`.
+2. Toate fișierele din repozitoriu sunt copiate pe server, unde proiectul se inițializează și trece prin linting și building înainte de deployment.
+3. Dacă toți pașii sunt reușiți, versiunea de producție asamblată a fișierelor proiectului este trimisă la ramura `gh-pages`. În caz contrar, log-ul de execuție al scriptului va indica care este problema.
