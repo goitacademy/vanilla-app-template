@@ -4,8 +4,8 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
-   define: {
-    global: {},
+  define: {
+    _global: {},
   },
   root: 'src',
   build: {
