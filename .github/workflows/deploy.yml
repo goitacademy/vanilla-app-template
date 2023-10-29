@@ -16,6 +16,14 @@ jobs:
           npm install
           npm run build
 
+      - name: Rename files
+        run: |
+          find ./ -type f -name "_commonjsHelpers-a1841df3.js" -exec bash -c 'mv "$0" "${0%/_commonjsHelpers-a1841df3.js}/commonjsHelpers-a1841df3.js"' {} \;
+
+      - name: Fix imports
+        run: |
+          find ./ -type f -exec sed -i 's/_commonjsHelpers-a1841df3.js/commonjsHelpers-a1841df3.js/g' {} \;
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
