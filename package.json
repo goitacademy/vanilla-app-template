@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.0.5",
+    "vite": "^4.5.2",
     "glob": "^8.1.0"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
