@@ -1,0 +1,21 @@
+.footer {
+  padding: 20px 0;
+}
+.footer-desc {
+  text-align: center;
+}
+.footer-link {
+  position: relative;
+}
+.footer-link::before {
+  content: '';
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%) skewX(-12deg);
+  z-index: -1;
+  width: 110%;
+  height: 24%;
+  background-color: #41d1ff;
+  transition: 200ms ease;
+}
