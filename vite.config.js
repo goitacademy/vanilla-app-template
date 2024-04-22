@@ -1,10 +1,7 @@
 import { defineConfig } from 'vite';
-import glob from 'fast-glob';
+import glob from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
-import imagemin from 'imagemin';
-import imageminWebp from 'imagemin-webp';
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 export default defineConfig(({ command }) => {
   return {
@@ -28,27 +25,6 @@ export default defineConfig(({ command }) => {
       },
       outDir: '../dist',
     },
-    plugins: [
-      injectHTML(),
-      FullReload(['./src/**/**.html']),
-      ViteImageOptimizer({
-        png: {
-          quality: 86,
-        },
-        jpeg: {
-          quality: 86,
-        },
-        jpg: {
-          quality: 86,
-        },
-      }),
-      {
-        ...imagemin(['./src/img/**/*.{jpg,png,jpeg}'], {
-          destination: './src/img/webp/',
-          plugins: [imageminWebp({ quality: 86 })],
-        }),
-        apply: 'serve',
-      },
-    ],
+    plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
   };
 });

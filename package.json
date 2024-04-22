@@ -15,10 +15,7 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "imagemin": "^8.0.1",
-    "imagemin-webp": "^8.0.0",
     "vite-plugin-full-reload": "^1.0.5",
-    "vite-plugin-html-inject": "^1.0.1",
-    "vite-plugin-image-optimizer": "^1.1.7"
+    "vite-plugin-html-inject": "^1.0.1"
   }
 }
