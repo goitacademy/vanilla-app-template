@@ -1,113 +1,81 @@
 # Vanilla App Template
 
-Этот проект был создан при помощи Vite. Для знакомства и настройки
-дополнительных возможностей [обратись к документации](https://vitejs.dev/).
+Bu proje Vite kullanılarak oluşturulmuştur. Ek özelliklerin tanınması ve özelleştirilmesi için [belgelere bakın (https://vitejs.dev/).
 
-## Создание репозитория по шаблону
+## Şablon kullanarak bir depo oluşturma
 
-Используй этот репозиторий организации GoIT как шаблон для создания репозитория
-своего проекта. Для этого нажми на кнопку `«Use this template»` и выбери опцию
-`«Create a new repository»`, как показано на изображении.
+Projeniz için bir depo oluşturmak üzere bu GoIT deposunu şablon olarak kullanın. Bunu yapmak için, `«Use this template»` düğmesine tıklayın ve resimde gösterildiği gibi `«Create a new repository»` seçeneğini seçin.
 
 ![Creating repo from a template step 1](./assets/template-step-1.png)
 
-На следующем шаге откроется страница создания нового репозитория. Заполни поле
-его имени, убедись, что репозиторий публичный, после чего нажми кнопку
-`«Create repository from template»`.
+Bir sonraki adımda yeni bir depo oluşturma sayfası açılır. Ad alanını doldurun, deponun herkese açık olduğundan emin olun ve ardından `«Create repository from template»` düğmesine tıklayın.
 
 ![Creating repo from a template step 2](./assets/template-step-2.png)
 
-После того как репозиторий будет создан, необходимо перейти в настройки
-созданного репозитория на вкладку `Settings` > `Actions` > `General` как
-показано на изображении.
+Depo oluşturulduktan sonra, oluşturulan deponun ayarlarına, resimde gösterildiği gibi `Settings` > `Actions` > `General` sekmesine gitmeniz gerekir.
 
 ![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
 
-Проскролив страницу до самого конца, в секции `«Workflow permissions»` выбери
-опцию `«Read and write permissions»` и поставь галочку в чекбоксе. Это
-необходимо для автоматизации процесса деплоя проекта.
+Sayfanın en sonuna gidin, `«Workflow permissions»` bölümünde `«Read and write permissions»` seçeneğini seçin ve onay kutusunu işaretleyin. Bu, proje dağıtımı sürecini otomatikleştirmek için gereklidir.
 
 ![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
 
-Теперь у тебя есть личный репозиторий проекта, со структурой файлов и папок
-репозитория-шаблона. Далее работай с ним, как с любым другим личным
-репозиторием, клонируй его себе на компьютер, пиши код, делай коммиты и
-отправляй их на GitHub.
+Artık depo şablonu dosyası ve klasör yapısına sahip kişisel bir proje deponuz var. Daha sonra diğer kişisel depolarla yaptığınız gibi onunla çalışın.
+Bilgisayarınıza klonlayın, kod yazın, taahhütlerde bulunun ve bunları GitHub'a gönderin.
 
-## Подготовка к работе
 
-1. Убедись что на компьютере установлена LTS-версия Node.js.
-   [Скачай и установи](https://nodejs.org/en/) её если необходимо.
-2. Установи базовые зависимости проекта в терминале командой `npm install`.
-3. Запусти режим разработки, выполнив в терминале команду `npm run dev`.
-4. Перейди в браузере по адресу [http://localhost:5173](http://localhost:5173).
-   Эта страница будет автоматически перезагружаться после сохранения изменений в
-   файлах проекта.
+## İş için hazırlanma
 
-## Файлы и папки
+1. Bilgisayarınızda Node.js'nin LTS sürümünün yüklü olduğundan emin olun. Gerekirse [Download and install] (https://nodejs.org/en/).
+2. Projenin temel bağımlılıklarını terminalde `npm install` komutu ile yükleyin.
+3. Terminalde `npm run dev` komutunu çalıştırarak geliştirme modunu başlatın.
+4. Tarayıcınızda [http://localhost:5173](http://localhost:5173) adresine gidin. Proje dosyalarındaki değişiklikleri kaydettikten sonra bu sayfa otomatik olarak yeniden yüklenecektir.
 
-- Файлы разметки компонентов страницы должни находиться в папке `src/partials` и
-  импортироваться в файл `index.html`. Например, файл с разметкой хедера
-  `header.html` создаем в папке `partials` и импортируем в `index.html`.
-- Файлы стилей должны лежать в папке `src/css` и импортироваться в HTML-файлы
-  страниц. Например, для `index.html` файл стилей называется `index.css`.
-- Изображения добавляй в папку `src/img`. Сборщик оптимизирует их, но только при
-  деплое продакшн версии проекта. Все это происходит в облаке, чтобы не
-  нагружать твой компьютер, так как на слабых машинах это может занять много
-  времени.
+## Dosyalar ve klasörler
 
-## Деплой
+- Sayfa bileşeni biçimlendirme dosyaları `rc/partials` klasöründe bulunmalı ve `index.html` dosyasına aktarılmalıdır. Örneğin, başlık biçimlendirme dosyası `header.html` `partials` klasöründe oluşturulur ve `index.html` dosyasına aktarılır.
+- Stil dosyaları `rc/css` klasöründe bulunmalı ve sayfaların HTML dosyalarına aktarılmalıdır. Örneğin, `index.html` için stil dosyası `index.css` olarak adlandırılır.
+- Görüntüleri `src/img` klasörüne eklersiniz. Oluşturucu bunları optimize eder, ancak yalnızca projenin üretim sürümü dağıtıldığında. Tüm bunlar bulutta gerçekleşir, böylece bilgisayarınıza yük olmaz, çünkü zayıf makinelerde uzun zaman alabilir.
 
-Продакшн версия проекта будет автоматически собираться и деплоиться на GitHub
-Pages, в ветку `gh-pages`, каждый раз когда обновляется ветка `main`. Например,
-после прямого пуша или принятого пул-реквеста. Для этого необходимо в файле
-`package.json` изменить значение флага `--base=/<REPO>/`, для команды `build`,
-заменив `<REPO>` на название своего репозитория, и отправить изменения на
-GitHub.
+
+## Dağıtım
+
+Projenin üretim sürümü, `main` dalı her güncellendiğinde otomatik olarak oluşturulacak ve `gh-pages` dalında GitHub Pages'a dağıtılacaktır. Örneğin, doğrudan bir push veya kabul edilen bir pool-request sonrasında. Bunu yapmak için `build` komutu için `package.json` dosyasındaki `--base=/<REPO>/` bayrağının değerini değiştirin, `<REPO>` yerine deponuzun adını yazın ve değişiklikleri GitHub'a gönderin.
 
 ```json
 "build": "vite build --base=/<REPO>/",
 ```
 
-Далее необходимо зайти в настройки GitHub-репозитория (`Settings` > `Pages`) и
-выставить раздачу продакшн версии файлов из папки `/root` ветки `gh-pages`, если
-это небыло сделано автоматически.
+Ardından, GitHub depo ayarlarına gidin (`Settings` > `Pages`) ve otomatik olarak yapılmadıysa, dosyaların üretim sürümünün `gh-pages` dalının `/root` klasöründen dağıtımını ayarlayın.
 
 ![GitHub Pages settings](./assets/repo-settings.png)
 
-### Статус деплоя
+### Dağıtımcı durumu
 
-Статус деплоя крайнего коммита отображается иконкой возле его идентификатора.
+Son işlemin dağıtım durumu, tanımlayıcısının yanındaki simge ile gösterilir.
 
-- **Желтый цвет** - выполняется сборка и деплой проекта.
-- **Зеленый цвет** - деплой завершился успешно.
-- **Красный цвет** - во время линтинга, сборки или деплоя произошла ошибка.
+- **Sarı renk** - proje inşa ediliyor ve dağıtılıyor.
+- **Yeşil renk** - dağıtım başarıyla tamamlandı.
+- **Kırmızı renk** - bağlama, oluşturma veya dağıtma sırasında bir hata oluştu.
 
-Более детальную информацию о статусе можно посмотреть кликнув по иконке, и в
-выпадающем окне перейти по ссылке `Details`.
+Durum hakkında daha ayrıntılı bilgi, simgeye tıklayarak ve açılan pencerede `Details` bağlantısına tıklayarak görüntülenebilir.
+
 
 ![Deployment status](./assets/deploy-status.png)
 
-### Живая страница
+### Canlı sayfa
 
-Через какое-то время, обычно пару минут, живую страницу можно будет посмотреть
-по адресу указанному на вкладке `Settings` > `Pages` в настройках репозитория.
-Например, вот ссылка на живую версию для этого репозитория
+Bir süre sonra, genellikle birkaç dakika, canlı sayfa depo ayarlarındaki `Settings` > `Pages` sekmesinde belirtilen adresten görüntülenebilir.
+Örneğin, bu depo için canlı sürümün bağlantısı şöyledir
 [https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
 
-Если открывается пустая страница, убедись что во вкладке `Console` нет ошибок
-связанных с неправильными путями к CSS и JS файлам проекта (**404**). Скорее
-всего у тебя неправильное значение флага `--base` для команды `build` в файле
-`package.json`.
 
-## Как это работает
+Boş bir sayfa açılırsa, `Console` sekmesinde projenin CSS ve JS dosyalarının yanlış yollarıyla ilgili herhangi bir hata olmadığından emin olun (**404**). Büyük olasılıkla `package.json` dosyasında `build` komutu için `--base` bayrağının yanlış bir değeri vardır.
+
+## Nasıl çalışır
 
 ![How it works](./assets/how-it-works.png)
 
-1. После каждого пуша в ветку `main` GitHub-репозитория, запускается специальный
-   скрипт (GitHub Action) из файла `.github/workflows/deploy.yml`.
-2. Все файлы репозитория копируются на сервер, где проект инициализируется и
-   проходит линтинг и сборку перед деплоем.
-3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
-   отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+GitHub deposuna yapılan her `main` gönderim sonrasında `.github/workflows/deploy.yml` dosyasında özel bir komut dosyası (GitHub Action) çalıştırılır.
+Depo dosyalarının tümü sunucuya kopyalanır, burada proje başlatılır ve dağıtımdan önce kod kalitesi kontrolü ve derleme yapılır.
+Eğer tüm adımlar başarılı bir şekilde tamamlanırsa, proje dosyalarının üretime hazır sürümü `gh-pages` dalına gönderilir. Aksi takdirde, komut dosyası çalıştırma günlüğünde sorunun ne olduğu belirtilir.
