@@ -26,7 +26,7 @@ Bilgisayarınıza klonlayın, kod yazın, taahhütlerde bulunun ve bunları GitH
 
 ## İş için hazırlanma
 
-1. Bilgisayarınızda Node.js'nin LTS sürümünün yüklü olduğundan emin olun. Gerekirse [Download and install] (https://nodejs.org/en/).
+1. Bilgisayarınızda Node.js'nin LTS sürümünün yüklü olduğundan emin olun. Gerekirse [Download and install](https://nodejs.org/en/).
 2. Projenin temel bağımlılıklarını terminalde `npm install` komutu ile yükleyin.
 3. Terminalde `npm run dev` komutunu çalıştırarak geliştirme modunu başlatın.
 4. Tarayıcınızda [http://localhost:5173](http://localhost:5173) adresine gidin. Proje dosyalarındaki değişiklikleri kaydettikten sonra bu sayfa otomatik olarak yeniden yüklenecektir.
