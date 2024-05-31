@@ -76,6 +76,9 @@ Boş bir sayfa açılırsa, `Console` sekmesinde projenin CSS ve JS dosyaların�
 
 ![How it works](./assets/how-it-works.png)
 
-GitHub deposuna yapılan her `main` gönderim sonrasında `.github/workflows/deploy.yml` dosyasında özel bir komut dosyası (GitHub Action) çalıştırılır.
-Depo dosyalarının tümü sunucuya kopyalanır, burada proje başlatılır ve dağıtımdan önce kod kalitesi kontrolü ve derleme yapılır.
-Eğer tüm adımlar başarılı bir şekilde tamamlanırsa, proje dosyalarının üretime hazır sürümü `gh-pages` dalına gönderilir. Aksi takdirde, komut dosyası çalıştırma günlüğünde sorunun ne olduğu belirtilir.
+1. GitHub deposuna yapılan her `main` gönderim sonrasında `.github/workflows/deploy.yml` 
+dosyasında özel bir komut dosyası (GitHub Action) çalıştırılır.
+2. Depo dosyalarının tümü sunucuya kopyalanır, burada proje başlatılır ve dağıtımdan önce 
+kod kalitesi kontrolü ve derleme yapılır.
+3. Eğer tüm adımlar başarılı bir şekilde tamamlanırsa, proje dosyalarının üretime hazır sürümü `gh-pages` 
+dalına gönderilir. Aksi takdirde, komut dosyası çalıştırma günlüğünde sorunun ne olduğu belirtilir.
