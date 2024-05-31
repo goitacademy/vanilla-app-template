@@ -54,9 +54,9 @@ Ardından, GitHub depo ayarlarına gidin (`Settings` > `Pages`) ve otomatik olar
 
 Son işlemin dağıtım durumu, tanımlayıcısının yanındaki simge ile gösterilir.
 
-- **Sarı renk** - proje inşa ediliyor ve dağıtılıyor.
-- **Yeşil renk** - dağıtım başarıyla tamamlandı.
-- **Kırmızı renk** - bağlama, oluşturma veya dağıtma sırasında bir hata oluştu.
+- **Sarı renk** — proje inşa ediliyor ve dağıtılıyor.
+- **Yeşil renk** — dağıtım başarıyla tamamlandı.
+- **Kırmızı renk** — bağlama, oluşturma veya dağıtma sırasında bir hata oluştu.
 
 Durum hakkında daha ayrıntılı bilgi, simgeye tıklayarak ve açılan pencerede `Details` bağlantısına tıklayarak görüntülenebilir.
 
