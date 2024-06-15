@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="./css/thankYouModal.css" />
+<div class="modal_TY_container is-hidden" data-modal>
+  <div class="modal-box">
+    <button type="button" class="close-button" data-modal-close>
+      <svg class="close-button-icon">
+        <use href=""></use>
+      </svg>
+    </button>
+    <div class="modal-img">
+      <picture class="raspberry-photo">
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/raspberry-mobile@1x.png 1x,
+            ./img/raspberry-mobile@2x.png 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/raspberry@1x.png 1x, ./img/raspberry@2x.png 2x"
+        />
+
+        <img src="./img/raspberry-mobile@1x.png" alt="Raspberries" />
+      </picture>
+      <h2 class="modal_header">THANK YOU</h2>
+      <p class="modal_paragraph">
+        Thank you for your order! Our team is preparing your box with fresh,
+        delicious fruits and vegetables, and we'll deliver it straight to your
+        doorstep. We appreciate your business and look forward to providing you
+        with the best possible experience!
+      </p>
+    </div>
+  </div>
+</div>
