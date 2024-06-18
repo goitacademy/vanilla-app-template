@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/fresh_harvest_box_gr/",
     "preview": "vite preview"
   },
   "devDependencies": {
