@@ -1,46 +1,61 @@
-<section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+<!DOCTYPE html>
+<html lang="en">
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Part</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/hero_styles.css">
+</head>
+
+<main>
+  <section class="container hero">
+
+    <div class="main_hero_header_part">
+      <h1 class="header_hero">FRESH HARVEST BOX IS YOUR ONE-STOP PLACE FOR A DELICIOUS FRUIT BASKET</h1>
+      <img scrset="../img/bananas.png 1x, ../img/bananas@2x.png 2x" src="../img/bananas.png" class="blured_banana" alt="Picture of blured bananas" width="66" height="44">
+      <img scrset="../img/strawberries.png 1x, ../img/strawberries@2x.png 2x" src="../img/strawberries.png" class="blured_strawberries" alt="Picture of blured strawberries" width="56" height="56">
     </div>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="./img/vite-logo.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+    <div class="container_border_image_hero">
+        <img srcset="../img/woman_with_orange.jpg 1x, ../img/woman_with_orange@2x.jpg 2x" src="../img/woman_with_orange.jpg" class="main_hero_picture" alt="Picture of smiling red hair young woman with slice of orange" width="311" height="484">
     </div>
-  </div>
-</section>
+
+    <button type="button" class="hero_shop_now_button">SHOP NOW</button>
+
+    <div class="combined_section">
+
+        <p class="paragraph_hero">Our expertly curated fruit baskets are made with the freshest, highest quality fruits available. Whether you are looking for a healthy snack or a gift for a loved one, Fresh Harvest Box has got you covered.</p>    
+
+        <div class="watermelon_section">
+          <h4 class="watermelon_section_header">Fruit</h4>
+          <img srcset="../img/watermelon_tropical.png 1x, ../img/watermelon_tropical@2x.png 2x" src="../img/watermelon_tropical.png" class="watermelon_picture" alt="Picture of three watermelons and two watermelon slices" width="200" height="172">
+          <img srcset="../img/Oval.png 1x, ../img/Oval@2x.png 2x" src="../img/Oval.png" class="shadow_under_watermelon" alt="blured shadow under fruits" width="239" height="38">
+          <p class="watermelon_section_paragraph">Refreshing and juicy, watermelon is the perfect summer treat and a great source of hydration</p>
+        </div>
+
+        <div class="hashtags_navigation_list">
+          <ul class="navigation_list">
+            <li a class="navigation_list_details detail_1" href="">#ORGANIC</li>
+            <li a class="navigation_list_details detail_2" href="">#PRODUCTS</li>
+            <li a class="navigation_list_details detail_3" href="">#BASKET</li>
+            <li a class="navigation_list_details detail_4" href="">#FRUITS</li>
+          </ul>
+        </div>
+
+        <div class="strawberry_section">
+          <h4 class="strawberry_section_header">Fruit</h4>
+          <img srcset="../img/strawberry_basket.png 1x, ../img/strawberry_basket@2x.png 2x" src="../img/strawberry_basket.png" class="strawberries_picture"alt="Picture of small white basket with strawberries" width="162" height="185">
+          <img srcset="../img/Oval.png 1x, ../img/Oval@2x.png 2x" src="../img/Oval.png" class="shadow_under_strawberries"alt="blured shadow under fruits" width="239" height="38">
+          <p class="strawberry_section_paragraph">Sweet and juicy, strawberries are packed with vitamin C and antioxidants, making them a delicious and healthy snack</p>
+        </div>
+
+    </div> 
+  </section>
+</main>
