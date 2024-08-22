@@ -1,0 +1,19 @@
+.badges-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.badges-link {
+  display: block;
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: 8px;
+  transition: 200ms ease-in;
+}
+.badges-link:hover,
+.badges-link:focus {
+  transform: scale(1.06);
+  color: #747bff;
+}
