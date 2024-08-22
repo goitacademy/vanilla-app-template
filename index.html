@@ -7,77 +7,122 @@
     <title>Vanilla App Template</title>
     
     <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/styles-f5b01566.css">
   </head>
   <body>
     <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container">
+    <nav class="nav">
+      <a class="nav-logo" href="./index.html" aria-label="Site logo">
+        <svg class="nav-logo-icon" width="100" height="30">
+          <use href="/vanilla-app-template/assets/sprite-072662bb.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+    <main>
+      <!-- Loads the specified .html file -->
+      <section class="vite-promo">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+    <div class="vite-promo-thumb">
+      <a
+        class="vite-promo-link"
+        href="https://vitejs.dev/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Link to Vite official website"
+        title="Vite.js  build tool"
+      >
+        <!-- Path to images as from index.html file -->
+        <img
+          class="pic"
+          src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
+          alt="Vite logo"
+          width="640"
+          height="640"
+        />
+      </a>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    <h1 class="main-title">
+      <span class="main-title-gradient">Vite</span>
+      Template by
+      <a
+        class="main-title-link"
+        href="https://github.com/goitacademy/vanilla-app-template"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GoIT
+      </a>
+    </h1>
   </div>
 </section>
+
+      <article class="badges">
+  <div class="container">
+    <ul class="badges-list">
+      <li class="badges-item">
+        <a
+          class="badges-link"
+          href="https://www.npmjs.com/package/vite-plugin-html-inject"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          HTML Inject
+        </a>
+      </li>
+      <li class="badges-item">
+        <a
+          class="badges-link"
+          href="https://www.npmjs.com/package/vite-plugin-full-reload"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Full Reload
+        </a>
+      </li>
+      <li class="badges-item">
+        <a
+          class="badges-link"
+          href="https://www.npmjs.com/package/postcss-sort-media-queries"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sort Media Queries
+        </a>
+      </li>
+    </ul>
+  </div>
+</article>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <p class="footer-desc">
+      Made with ✨ by
+      <a
+        class="footer-link"
+        href="https://goit.global/ua/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GoIT team
+      </a>
+    </p>
+  </div>
+</footer>
 
 
     
