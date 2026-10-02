@@ -40,11 +40,7 @@ Bilgisayarınıza klonlayın, kod yazın, taahhütlerde bulunun ve bunları GitH
 
 ## Dağıtım
 
-Projenin üretim sürümü, `main` dalı her güncellendiğinde otomatik olarak oluşturulacak ve `gh-pages` dalında GitHub Pages'a dağıtılacaktır. Örneğin, doğrudan bir push veya kabul edilen bir pool-request sonrasında. Bunu yapmak için `build` komutu için `package.json` dosyasındaki `--base=/<REPO>/` bayrağının değerini değiştirin, `<REPO>` yerine deponuzun adını yazın ve değişiklikleri GitHub'a gönderin.
-
-```json
-"build": "vite build --base=/<REPO>/",
-```
+Projenin üretim sürümü, `main` dalı her güncellendiğinde otomatik olarak oluşturulacak ve `gh-pages` dalında GitHub Pages'a dağıtılacaktır. Örneğin, doğrudan bir push veya kabul edilen bir pool-request sonrasında. Temel yol (`base`), dağıtım sırasında depo adından otomatik olarak belirlenir; bu nedenle `package.json` dosyasında hiçbir şeyi değiştirmene gerek yok.
 
 Ardından, GitHub depo ayarlarına gidin (`Settings` > `Pages`) ve otomatik olarak yapılmadıysa, dosyaların üretim sürümünün `gh-pages` dalının `/root` klasöründen dağıtımını ayarlayın.
 
@@ -70,7 +66,7 @@ Bir süre sonra, genellikle birkaç dakika, canlı sayfa depo ayarlarındaki `Se
 [https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
 
 
-Boş bir sayfa açılırsa, `Console` sekmesinde projenin CSS ve JS dosyalarının yanlış yollarıyla ilgili herhangi bir hata olmadığından emin olun (**404**). Büyük olasılıkla `package.json` dosyasında `build` komutu için `--base` bayrağının yanlış bir değeri vardır.
+Boş bir sayfa açılırsa, `Console` sekmesinde projenin CSS ve JS dosyalarının yanlış yollarıyla ilgili herhangi bir hata olmadığından emin olun (**404**). Temel yol otomatik olarak ayarlanır; bu nedenle en olası neden, GitHub Pages'in `Settings` > `Pages` bölümünde henüz etkinleştirilmemiş veya yapılandırılmamış olmasıdır.
 
 ## Nasıl çalışır
 

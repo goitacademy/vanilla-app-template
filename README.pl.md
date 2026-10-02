@@ -58,13 +58,7 @@ przesyłaj je do GitHub.
 
 Wersja produkcyjna projektu zostanie automatycznie zbudowana i wdrożona na GitHub
 Pages, w gałęzi `gh-pages`, za każdym razem, gdy gałąź `main` zostanie zaktualizowana.
-Na przykład po bezpośrednim przesłaniu lub zaakceptowaniu pull request. Aby to zrobić, 
-należy w pliku `package.json` zmienić wartość flagi `--base=/<REPO>/`, dla polecenia `build`,
-zastępując `<REPO>` nazwą repozytorium i wysłać zmiany do GitHub.
-
-```json
-"build": "vite build --base=/<REPO>/",
-```
+Na przykład po bezpośrednim przesłaniu lub zaakceptowaniu pull request. Ścieżka bazowa (`base`) jest ustalana automatycznie na podstawie nazwy repozytorium podczas wdrożenia, więc nie musisz niczego zmieniać w pliku `package.json`.
 
 Następnie należy przejść do ustawień repozytorium GitHub (`Settings` > `Pages`) i
 i ustawić dystrybucję wersji produkcyjnej plików z folderu `/root` gałęzi `gh-pages`,
@@ -95,8 +89,7 @@ Na przykład, oto link do wersji live dla tego repozytorium:
 
 Jeśli widzisz pustą stronę, upewnij się, że w zakładce `Console` nie ma
 błędów związanych z nieprawidłowymi ścieżkami do plików CSS i JS projektu
-(**404**). Najprawdopodobniej masz nieprawidłową wartość flagi `--base`
-dla polecenia `build` w pliku `package.json`.
+(**404**). Ścieżka bazowa jest ustawiana automatycznie, więc najbardziej prawdopodobną przyczyną jest to, że GitHub Pages nie zostało jeszcze włączone lub skonfigurowane w `Settings` > `Pages`.
 
 ## Jak to działa
 

@@ -54,14 +54,7 @@ Această pagină se va reîncărca automat după salvarea modificărilor în fi�
 Versiunea de producție a proiectului va fi construită și distribuită automat pe 
 GitHub Pages, în branch-ul `gh-pages`, de fiecare dată când branch-ul `main` este 
 actualizată. De exemplu, după un push direct sau un pull request acceptat. 
-Pentru a face acest lucru, modifică valoarea flag-ului `--base=/<REPO>/` din 
-fișierul `package.json`, pentru comanda `build`, înlocuind `<REPO>` cu numele 
-repository-ului tău și trimite modificările pe
-GitHub.
-
-```json
-"build": "vite build --base=/<REPO>/",
-```
+Calea de bază (`base`) este determinată automat din numele repository-ului în timpul deploy-ului, așa că nu trebuie să modifici nimic în fișierul `package.json`.
 
 Apoi, accesează setările repository-ului GitHub (`Settings` > `Pages`) și selectează 
 să fie distribuită versiunea de producție a fișierelor din folderul `/root` al 
@@ -91,8 +84,7 @@ De exemplu: iată link-ul către versiunea live pentru acest repository
 
 Dacă se deschide o pagină goală, verifică dacă nu sunt erori în fila `Console`, 
 legate de căile de acces incorecte către fișierele CSS și JS ale proiectului 
-(**404**). Cel mai probabil, ai o valoare greșită a flag-ului `--base` pentru 
-comanda `build` din fișierul `package.json`.
+(**404**). Calea de bază este setată automat, așa că cea mai probabilă cauză este că GitHub Pages nu a fost încă activat sau configurat în `Settings` > `Pages`.
 
 ## Cum funcționează
 
