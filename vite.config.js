@@ -6,6 +6,11 @@ import SortCss from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
+    // base для GitHub Pages береться з назви репозиторію під час деплою;
+    // локально (без GITHUB_REPOSITORY) — '/'
+    base: process.env.GITHUB_REPOSITORY
+      ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/`
+      : '/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
