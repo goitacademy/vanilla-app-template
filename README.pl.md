@@ -1,13 +1,13 @@
 # Vanilla App Template
 
-Ten szablon do projektów zespołowych został zbudowany przy użyciu Vite. Aby zapoznać się i skonfigurować
+Ten projekt został zbudowany przy użyciu Vite. Aby zapoznać się i skonfigurować
 dodatkowe funkcje [zapoznaj się z dokumentacją](https://vitejs.dev/).
 
 ## Tworzenie repozytorium za pomocą szablonu
 
-Użyj tego repozytorium jako szablonu, aby utworzyć repozytorium dla swojego
-projektu. By to zrobić, kliknij przycisk `«Use this template»` i wybierz opcję
-`«Create a new repository»`, jak pokazano na obrazku.
+Użyj tego repozytorium GoIT jako szablonu, aby utworzyć repozytorium
+dla swojego projektu. By to zrobić, kliknij przycisk `«Use this template»` і
+wybierz opcję `«Create a new repository»`, jak pokazano na obrazku.
 
 ![Creating repo from a template step 1](./assets/template-step-1.png)
 
@@ -17,11 +17,17 @@ przycisk `«Create repository from template»`.
 
 ![Creating repo from a template step 2](./assets/template-step-2.png)
 
-Po utworzeniu repozytorium włącz dla niego GitHub Pages: przejdź do
-`Settings` > `Pages` i w sekcji `Build and deployment` wybierz `Source` →
-`GitHub Actions`. To jedyne jednorazowe ustawienie.
+Po utworzeniu repozytorium należy przejść do ustawień
+utworzonego repozytorium w zakładce `Settings` > `Actions` > `General`,
+jak pokazano na obrazku.
 
-![GitHub Pages: Source → GitHub Actions](./assets/repo-settings.jpg)
+![Settings GitHub Actions permissions step 1](./assets/gh-actions-perm-1.png)
+
+Przewiń do samego końca strony, w sekcji `«Workflow permissions»` wybierz
+opcję `«Read and write permissions»` i zaznacz pole wyboru. Jest to konieczne,
+aby zautomatyzować proces wdrażania projektu.
+
+![Settings GitHub Actions permissions step 2](./assets/gh-actions-perm-2.png)
 
 Teraz masz osobiste repozytorium projektu ze strukturą plików i folderów
 repozytorium wzorcowego. Pracuj z nim tak, jak z każdym innym osobistym
@@ -39,22 +45,32 @@ przesyłaj je do GitHub.
 
 ## Pliki i foldery
 
-- Swój kod JavaScript pisz w `src/main.js` oraz w innych plikach, które utworzysz w razie potrzeby.
 - Pliki znaczników dla komponentów strony powinny być umieszczone w folderze `src/partials` i
   zaimportowane do pliku `index.html`. Na przykład, plik ze znacznikami nagłówka
   `header.html` należy utworzyć w folderze `partials` i zaimportować do `index.html`.
-- Pliki stylów powinny być umieszczone w folderze `src/css` i podłączane do plików HTML
-  stron. Na przykład `index.html` podłącza `./css/styles.css`.
-- Obrazy należy dodawać do folderu `src/img`. Konstruktor zoptymalizuje je, ale dopiero po
+- Pliki stylów powinny być umieszczone w folderze `src/css` i zaimportowane do plików HTML
+  stron. Na przykład, dla `index.html` plik stylów nazywa się `index.css`.
+- Obrazy należy dodawać do folderu `src/img`. Konstruktor zoptymalizuje je, ale dopiero po 
   wdrożeniu produkcyjnej wersji projektu. Wszystko to dzieje się w chmurze, aby nie
   obciążać Twojego komputera, ponieważ na słabych komputerach może to zająć dużo czasu.
 
 ## Wdrożenie
 
-Wersja live strony aktualizuje się automatycznie: za każdym razem, gdy zmieniasz
-pliki projektu i wysyłasz zmiany na GitHub do gałęzi `main` (bezpośrednim pushem
-lub przez zaakceptowany pull request), projekt sam się przebudowuje i publikuje
-na GitHub Pages.
+Wersja produkcyjna projektu zostanie automatycznie zbudowana i wdrożona na GitHub
+Pages, w gałęzi `gh-pages`, za każdym razem, gdy gałąź `main` zostanie zaktualizowana.
+Na przykład po bezpośrednim przesłaniu lub zaakceptowaniu pull request. Aby to zrobić, 
+należy w pliku `package.json` zmienić wartość flagi `--base=/<REPO>/`, dla polecenia `build`,
+zastępując `<REPO>` nazwą repozytorium i wysłać zmiany do GitHub.
+
+```json
+"build": "vite build --base=/<REPO>/",
+```
+
+Następnie należy przejść do ustawień repozytorium GitHub (`Settings` > `Pages`) i
+i ustawić dystrybucję wersji produkcyjnej plików z folderu `/root` gałęzi `gh-pages`,
+jeśli nie zostało to zrobione automatycznie.
+
+![GitHub Pages settings](./assets/repo-settings.png)
 
 ### Status wdrożenia
 
@@ -62,30 +78,34 @@ Status wdrożenia ostatniego zatwierdzenia jest wyświetlany za pomocą ikony ob
 
 - **Żółty** - projekt jest budowany i wdrażany.
 - **Zielony** - wdrożenie zakończyło się pomyślnie.
-- **Czerwony** - wystąpił błąd podczas budowania lub wdrażania.
+- **Czerwony** - wystąpił błąd podczas lintingu, budowania lub wdrażania.
 
-Bardziej szczegółowe informacje na temat statusu można wyświetlić, klikając ikonę,
+Bardziej szczegółowe informacje na temat statusu można wyświetlić, klikając ikonę, 
 a następnie link `Details` znajdujący się w rozwijanym oknie.
 
 ![Deployment status](./assets/deploy-status.png)
 
 ### Strona na żywo
 
-Po pewnym czasie, zwykle kilku minutach, stronę na żywo można zobaczyć pod
-adresem podanym w zakładce `Settings` > `Pages` w ustawieniach Twojego
-repozytorium. Dla przykładu, oto link do wersji live tego repozytorium-szablonu —
-u Ciebie będzie własny:
+Po pewnym czasie, zwykle kilku minutach, strona na żywo może być wyświetlona
+pod adresem określonym w zakładce `Settings` > `Pages` w ustawieniach repozytorium. 
+Na przykład, oto link do wersji live dla tego repozytorium:
 
 [https://goitacademy.github.io/vanilla-app-template/](https://goitacademy.github.io/vanilla-app-template/).
 
-Jeśli otworzy się pusta strona, sprawdź, czy GitHub Pages jest włączone
-(`Settings` > `Pages`) i czy ostatnie wdrożenie w zakładce `Actions` zakończyło
-się pomyślnie (na zielono).
+Jeśli widzisz pustą stronę, upewnij się, że w zakładce `Console` nie ma
+błędów związanych z nieprawidłowymi ścieżkami do plików CSS i JS projektu
+(**404**). Najprawdopodobniej masz nieprawidłową wartość flagi `--base`
+dla polecenia `build` w pliku `package.json`.
 
 ## Jak to działa
 
 ![How it works](./assets/how-it-works.png)
 
-Pod maską: po pushu do `main` uruchamia się GitHub Action z
-`.github/workflows/deploy.yml`, który buduje projekt i publikuje go na GitHub
-Pages. Jeśli coś pójdzie nie tak — szczegóły znajdziesz w zakładce `Actions`.
+1. Po każdym wysłaniu do gałęzi `main` repozytorium GitHub, uruchamiany jest
+   specjalny skrypt (GitHub Action) z pliku `.github/workflows/deploy.yml`.
+2. Wszystkie pliki repozytorium są kopiowane na serwer, gdzie projekt jest
+   inicjalizowany, przechodzi linting i budowanie przed wdrożeniem.
+3. Jeśli wszystkie kroki zakończą się powodzeniem, zmontowana wersja produkcyjna
+   plików projektu zostanie wysłana do gałęzi `gh-pages`. W przeciwnym razie
+   w logu wykonania skryptu pojawi się informacja o problemie.
