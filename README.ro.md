@@ -1,5 +1,7 @@
 # Vanilla App Template
 
+> Acest template este destinat **proiectelor de echipă**. Temele se realizează într-un template separat.
+
 Acest proiect a fost creat cu ajutorul Vite. Pentru o mai bună cunoaștere
 și configurare a funcțiilor suplimentare [consultă documentația](https://vitejs.dev/).
 

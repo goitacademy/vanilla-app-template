@@ -1,5 +1,7 @@
 # Vanilla App Template
 
+> Bu şablon **takım projeleri** içindir. Ödevler ayrı bir şablonda yapılır.
+
 Bu proje Vite kullanılarak oluşturulmuştur. Ek özelliklerin tanınması ve özelleştirilmesi için [belgelere bakın](https://vitejs.dev/).
 
 ## Şablon kullanarak bir depo oluşturma
