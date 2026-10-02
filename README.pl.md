@@ -1,8 +1,6 @@
 # Vanilla App Template
 
-> Ten szablon jest przeznaczony do **projektów zespołowych**. Zadania domowe wykonuje się w osobnym szablonie.
-
-Ten projekt został zbudowany przy użyciu Vite. Aby zapoznać się i skonfigurować
+Ten szablon do projektów zespołowych został zbudowany przy użyciu Vite. Aby zapoznać się i skonfigurować
 dodatkowe funkcje [zapoznaj się z dokumentacją](https://vitejs.dev/).
 
 ## Tworzenie repozytorium za pomocą szablonu
